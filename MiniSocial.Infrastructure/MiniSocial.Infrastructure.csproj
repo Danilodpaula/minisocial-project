@@ -19,4 +19,8 @@
       <Folder Include="Repositories\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MiniSocial.Domain\MiniSocial.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
