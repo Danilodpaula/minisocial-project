@@ -1,0 +1,60 @@
+@startuml
+title MiniSocial API - Simplified Social Network Domain
+
+class User {
+  + Id : int
+  + Name : string
+  + Username : string
+  + Email : string
+  + CreatedAt : DateTime
+}
+
+class Post {
+  + Id : int
+  + UserId : int
+  + Content : string
+  + CreatedAt : DateTime
+}
+
+class Comment {
+  + Id : int
+  + PostId : int
+  + UserId : int
+  + Content : string
+  + CreatedAt : DateTime
+}
+
+class Reaction {
+  + Id : int
+  + PostId : int
+  + UserId : int
+  + Type : ReactionType
+  + CreatedAt : DateTime
+}
+
+class Follow {
+  + Id : int
+  + FollowerId : int
+  + FollowedId : int
+  + CreatedAt : DateTime
+}
+
+enum ReactionType {
+  Like
+  Love
+  Funny
+}
+
+User "1" --> "N" Post
+User "1" --> "N" Comment
+Post "1" --> "N" Comment
+
+User "1" --> "N" Reaction
+Post "1" --> "N" Reaction
+
+User "1" --> "N" Follow : follows
+User "1" --> "N" Follow : is followed by
+
+Reaction --> ReactionType
+
+@enduml

@@ -1,0 +1,23 @@
+services:
+  minisocial-postgres:
+    image: postgres:15
+    container_name: minisocial-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: minisocial_db
+      POSTGRES_USER: minisocial_user
+      POSTGRES_PASSWORD: minisocial_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - minisocial_postgres_data:/var/lib/postgresql/data
+      - ./minisocial-db/init:/docker-entrypoint-initdb.d
+    networks:
+      - minisocial-network
+
+volumes:
+  minisocial_postgres_data:
+
+networks:
+  minisocial-network:
+    driver: bridge

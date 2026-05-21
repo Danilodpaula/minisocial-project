@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSocial.API", "MiniSocial.API\MiniSocial.API.csproj", "{EBC525B3-CBA9-48AE-B31E-5EFF798734F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSocial.Infrastructure", "MiniSocial.Infrastructure\MiniSocial.Infrastructure.csproj", "{C9422A62-7279-44D7-B5E8-5E72C182DEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSocial.Application", "MiniSocial.Application\MiniSocial.Application.csproj", "{94394154-9226-494B-9C38-2AD39E167729}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBC525B3-CBA9-48AE-B31E-5EFF798734F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC525B3-CBA9-48AE-B31E-5EFF798734F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC525B3-CBA9-48AE-B31E-5EFF798734F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC525B3-CBA9-48AE-B31E-5EFF798734F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9422A62-7279-44D7-B5E8-5E72C182DEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9422A62-7279-44D7-B5E8-5E72C182DEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9422A62-7279-44D7-B5E8-5E72C182DEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9422A62-7279-44D7-B5E8-5E72C182DEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94394154-9226-494B-9C38-2AD39E167729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94394154-9226-494B-9C38-2AD39E167729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94394154-9226-494B-9C38-2AD39E167729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94394154-9226-494B-9C38-2AD39E167729}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
