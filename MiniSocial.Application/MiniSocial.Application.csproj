@@ -6,4 +6,15 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="DTOs\User\Delete\" />
+      <Folder Include="DTOs\User\Read\" />
+      <Folder Include="DTOs\User\Update\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MiniSocial.Domain\MiniSocial.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

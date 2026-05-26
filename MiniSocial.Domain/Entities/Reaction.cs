@@ -8,4 +8,5 @@ public class Reaction
         public int PostId { get; set; }
         public int UserId { get; set; }
         public ReactionType Type { get; set; } 
+        public DateTime CreatedAt { get; set; } =  DateTime.UtcNow;
 }

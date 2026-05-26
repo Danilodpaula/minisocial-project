@@ -16,10 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Repositories\" />
-    </ItemGroup>
-
-    <ItemGroup>
+      <ProjectReference Include="..\MiniSocial.API\MiniSocial.API.csproj" />
       <ProjectReference Include="..\MiniSocial.Domain\MiniSocial.Domain.csproj" />
     </ItemGroup>
 
